@@ -138,7 +138,10 @@ export default function Home() {
               </h1>
               <div className="space-y-[10px]">
                 {Fruits.map((data) => (
-                  <div className="flex  place-items-center w-[270px] h-[73px] bg-white border-[1.5px] border-solid hover:border-orange-600 border-[rgba(229, 85, 39, 1)] rounded-[10px]">
+                  <div
+                    key={data.name}
+                    className="flex  place-items-center w-[270px] h-[73px] bg-white border-[1.5px] border-solid hover:border-orange-600 border-[rgba(229, 85, 39, 1)] rounded-[10px]"
+                  >
                     <div className="p-[10px]">
                       <Image alt="" src={data.image} height={57} width={57} />
                     </div>
@@ -356,7 +359,10 @@ export default function Home() {
               </h1>
               <div className="space-y-[10px]">
                 {Fruits.map((data) => (
-                  <div className="flex  place-items-center w-[270px] h-[73px] bg-white border-[1.5px] border-solid hover:border-orange-600 border-[rgba(229, 85, 39, 1)] rounded-[10px]">
+                  <div
+                    key={data.name}
+                    className="flex  place-items-center w-[270px] h-[73px] bg-white border-[1.5px] border-solid hover:border-orange-600 border-[rgba(229, 85, 39, 1)] rounded-[10px]"
+                  >
                     <div className="p-[10px]">
                       <Image alt="" src={data.image} height={57} width={57} />
                     </div>
